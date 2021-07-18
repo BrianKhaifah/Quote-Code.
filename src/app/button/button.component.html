@@ -4,7 +4,7 @@
 
     <p>Publisher: {{quote.publisher}}</p>
 
-    <p>Downvotes: {{quote.downvotes}}</p>
+    <p>Downvotes: {{quote.downvote}}</p>
 
     <p>Upvote: {{quote.upvote}}</p>
 
@@ -12,17 +12,17 @@
 
     <div class="col-md-4">
 
-      <button ></button>
+      <button (click)='upvote()'>Upvote</button>
 
     </div>
 
     <div class="col-md-4">
+      <button (click)='downvote()'>Downvote</button>
 
     </div>
 
     <div class="col-md-4">
-
-      <!-- <button ( click ) details(i) class="btn btn-danger">DELETE</button> -->
+    <button ( click )= 'deleteQuote(true)' class="btn btn-danger">DELETE</button>
 
     </div>
 
