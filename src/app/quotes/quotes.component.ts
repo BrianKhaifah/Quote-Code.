@@ -17,7 +17,27 @@ export class QuotesComponent implements OnInit {
 
   ]
 
-  Published = Date
+  get sortQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.published) - <any>new Date(a.published);
+    });
+  }
+
+  addedQuote(quote){
+    let arraysize = this.quotes.length;
+    quote.id = arraysize+1;
+    quote.published = new Date(quote.published)
+    this.quotes.push(quote)
+  }
+  quoteDelete(isRead, index){
+    if (isRead) {
+      let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+      if(toDelete){
+        this.quotes.splice(index,1);
+      }
+
+    }
+  }
 
   constructor() { }
 

@@ -4,15 +4,7 @@
 
     <h2> {{quote.quote}} </h2>
 
-    <p>Author: {{quote.author}}</p>
-
-    <p>Publisher: {{quote.publisher}}</p>
-
-    <p>Downvotes: {{quote.downvotes}}</p>
-
-    <p>Upvote: {{quote.upvote}}</p>
-
-    <p>Published: {{quote.published}}</p>
-
+    <app-button *ngIf='quote' bind-quote='quote' (isRead)='quoteDelete($event,i)'>
+    </app-button>
   </div>
 </div>
