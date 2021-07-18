@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quotes } from "../quotes"
 
 @Component({
   selector: 'app-quotes',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesComponent implements OnInit {
 
-  Date = Date
+  quotes:Quotes[]=[
+
+    new Quotes( "The World is changed by Your Example not Opinion" , "Paulo Coelho ", "KlB", 0 , 0 , new Date ( 2018, 7 , 6) ),
+    new Quotes( "Injustice anywhere is a threat to justice everywhere." , "Martin Luther King Jr.", "Letter from the Birmingham Jail", 0 , 0 , new Date ( 1968, 6 , 10) ),
+    new Quotes( "Live as if you were to die tomorrow. Learn as if you were to live forever" , "Mahatma Gandhi", "Mahatma Gandhi", 0 , 0 , new Date ( 2020, 6 , 8) ),
+    new Quotes( "Darkness cannot drive out darkness: only light can do that. Hate cannot drive out hate: only love can do that." , "Martin Luther King Jr", "A Testament of Hope", 0 , 0 , new Date ( 1968, 6 , 28) ),
+
+  ]
+
+  Published = Date
 
   constructor() { }
 

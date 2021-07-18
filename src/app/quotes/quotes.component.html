@@ -1,16 +1,18 @@
-<div class="bg-secondary">
+<div class="bg-">
 
-  <div>
+  <div *ngFor= 'let quote of quotes '>
 
-    <h2>Injustice anywhere is a threat to justice everywhere.</h2>
+    <h2> {{quote.quote}} </h2>
 
-    <p>Author:</p>
+    <p>Author: {{quote.author}}</p>
 
-    <p>Publisher:</p>
+    <p>Publisher: {{quote.publisher}}</p>
 
-    <p>Downvotes:</p>
+    <p>Downvotes: {{quote.downvotes}}</p>
 
-    <p>Date:{{Date}}</p>
+    <p>Upvote: {{quote.upvote}}</p>
+
+    <p>Published: {{quote.published}}</p>
 
   </div>
 </div>
