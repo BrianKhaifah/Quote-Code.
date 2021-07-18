@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesComponent implements OnInit {
 
+  Date = Date
+
   constructor() { }
 
   ngOnInit(): void {
