@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+* li{
+  text-decoration: none;
+  list-style: none;
+
+}
+h1 {
+  text-align: center;
+
+}
+body {
+
+  background: url("https://bit.ly/2Td81XY")no-repeat center center;
+  background-size: cover;
+  height: auto;
+  padding: 50px;
+}
