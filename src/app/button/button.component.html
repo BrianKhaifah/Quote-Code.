@@ -1,15 +1,17 @@
 <div class="container">
-  <div class="row">
-    <p>Author: {{quote.author}}</p>
 
-    <p>Publisher: {{quote.publisher}}</p>
+    <p>Author: <span>{{quote.author}}</span></p>
 
-    <p>Downvotes: {{quote.downvote}}</p>
+    <p>Publisher: <span>{{quote.publisher}}</span></p>
 
-    <p>Upvote: {{quote.upvote}}</p>
+    <p>Downvotes: <span>{{quote.downvote}}</span></p>
 
-    <p>Published: {{quote.published}}</p>
+    <p>Upvote: <span>{{quote.upvote}}</span></p>
 
+    <p>Published: <span>{{quote.published}}</span></p>
+
+    <div class="row">
+      
     <div class="col-md-4">
 
       <button (click)='upvote()'>Upvote</button>
