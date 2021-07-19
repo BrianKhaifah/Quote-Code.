@@ -1,32 +1,49 @@
 <div class="container">
 
-    <p>Author: <span>{{quote.author}}</span></p>
+    <p id="paragraph">Author: <span id="span">{{quote.author}}</span></p>
 
-    <p>Publisher: <span>{{quote.publisher}}</span></p>
+    <p id="paragraph">Publisher: <span id="span">{{quote.publisher}}</span></p>
 
-    <p>Downvotes: <span>{{quote.downvote}}</span></p>
+    <p id="paragraph">Downvotes: <span id="span">{{quote.downvote}}</span></p>
 
-    <p>Upvote: <span>{{quote.upvote}}</span></p>
+    <p id="paragraph">Upvote: <span id="span">{{quote.upvote}}</span></p>
 
-    <p>Published: <span>{{quote.published}}</span></p>
+    <p id="paragraph">Published: <span id="span">{{quote.published}}</span></p>
+
+
+
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
 
     <div class="row">
-      
-    <div class="col-md-4">
 
-      <button (click)='upvote()'>Upvote</button>
+      <div class="col-md-4">
+
+        <button (click)='upvote()'>Upvote</button>
+
+      </div>
+
+      <div class="col-md-4">
+        <button (click)='downvote()'>Downvote</button>
+
+      </div>
+
+      <div class="col-md-4">
+
+        <button class="btn btn-danger" id="del" (click)='deleteQuote(true)'>Delete</button>
+      </div>
 
     </div>
 
-    <div class="col-md-4">
-      <button (click)='downvote()'>Downvote</button>
-
     </div>
+    <div class="col-md-2">
 
-    <div class="col-md-4">
-
-      <button class="btn btn-danger" id="del" (click)='deleteQuote(true)'>Delete</button>
     </div>
 
   </div>
-</div>
+
+  </div>
+

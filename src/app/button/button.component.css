@@ -1,6 +1,13 @@
-p{
+#paragraph{font-size: 15px;
 
 }
-span{
-  
+#span{
+font-size: 30px;
+font-family: 'Great Vibes', cursive;
+
+
 }
+.row{
+  padding-bottom: 25px;
+}
+
