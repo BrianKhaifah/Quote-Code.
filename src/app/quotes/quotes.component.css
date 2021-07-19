@@ -8,6 +8,26 @@ h1{
 h2{
   font-family: 'Lobster Two', cursive;
   font-size: 50px;
+  color: wheat;
+
+
+}
+
+.wit{
+  border-radius: 20px;
+  padding: 20px;
+  color: whitesmoke;
+
+}
+.wit:hover{
+  border-radius: 20px;
+  background: url("https://bit.ly/3hLJvXy")no-repeat center center;
+  background:rgba(0, 0, 0, 0.2) ;
+
+
+  /* background: url("https://bit.ly/3xT4opa")no-repeat center center; */
+  background-size: 100% 100%;
+  padding: 20px;
 
 }
 

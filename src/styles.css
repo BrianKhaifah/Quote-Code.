@@ -14,10 +14,13 @@ h1 {
 }
 body {
 
-  /* background: url("https://bit.ly/3zcUSgS")no-repeat center center; */
+  background: url("https://bit.ly/3ktR473")no-repeat center center;
   background-color: black;
   color: green;
   background-size: cover;
   height: auto;
   padding: 50px;
+}
+.btn{
+  width: 200px;
 }
