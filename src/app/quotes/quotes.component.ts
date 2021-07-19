@@ -17,12 +17,6 @@ export class QuotesComponent implements OnInit {
 
   ]
 
-  get sortQuotes() {
-    return this.quotes.sort((a, b) => {
-      return <any>new Date(b.published) - <any>new Date(a.published);
-    });
-  }
-
   addedQuote(quote){
     let arraysize = this.quotes.length;
     quote.id = arraysize+1;
