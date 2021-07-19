@@ -17,7 +17,7 @@ body {
   background: url("https://bit.ly/3ktR473")no-repeat center center;
   background-color: black;
   color: green;
-  background-size: cover;
+  background-size: 100% 100%;
   height: auto;
   padding: 50px;
 }
