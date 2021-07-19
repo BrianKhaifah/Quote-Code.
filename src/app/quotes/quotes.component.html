@@ -18,7 +18,8 @@
 
       <div *ngFor= 'let quote of quotes let i= index'>
 
-        <h2> {{quote.quote}} </h2>
+        <h2> {{quote.quote }} </h2>
+
 
         <app-button *ngIf='quote' bind-quote='quote' (isRead)='quoteDelete($event,i)'>
         </app-button>
